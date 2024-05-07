@@ -6,9 +6,27 @@
 
 body {
     font-family: "Lato", sans-serif;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 a {
-    font-style: inherit;
+    text-decoration: inherit;
     color: inherit;
+}
+
+header {
+    position: fixed;
+    top: 3rem;
+    text-align: right;
+    width: 100%;
+    padding: 0 3rem;
+}
+
+header a {
+    font-size: max(1.75vh, 1.125rem);
+    padding: .5em .75em;
+    border-radius: 0.3em;
+    background-color: #adadad5d;
+    margin-left: 0.5em;
 }
