@@ -14,6 +14,7 @@ a {
 }
 
 
+/* Screen wrapper */
 #wrapper {
     height: 100vh;
     width: 100%;
@@ -26,16 +27,6 @@ a {
     color: #ffffff;
 }
 
-
-#meeting {
-    width: 100%;
-    height: calc(100% - 5rem);
-    padding: 3rem;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 /* Overlay menu */
 #overlay {
@@ -63,6 +54,50 @@ a {
 
 #overlay a:active {
     background-color: #adadad18;
+}
+
+
+/* Meeting screen */
+#meeting {
+    width: 100%;
+    height: calc(100% - 5rem);
+    padding: 3rem;
+    overflow-y: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.user {
+    width: 18rem;
+    height: 12rem;
+    position: relative;
+    margin: 0.5rem;
+}
+
+.user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user div {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    padding: .2rem;
+    background-color: #adadad5d;
+}
+
+.user-status {
+    vertical-align: middle;
+}
+
+.user-name {
+    vertical-align: middle;
+    font-size: .75rem;
 }
 
 
